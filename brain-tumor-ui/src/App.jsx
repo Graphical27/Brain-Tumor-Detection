@@ -62,6 +62,22 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
+      {/* Info Banner */}
+      <div className="w-full bg-blue-100 border-b border-blue-200 py-3 px-4 flex items-center justify-center">
+        <Info className="w-5 h-5 text-blue-600 mr-2" />
+        <span className="text-sm text-blue-800">
+          The model is hosted for free and may sometimes stop working. To see how the site works or view results, visit the&nbsp;
+          <a
+            href="https://github.com/Graphical27/Brain-Tumor-Detection"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-700 hover:text-blue-900"
+          >
+            GitHub project
+          </a>.
+        </span>
+      </div>
+
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">
