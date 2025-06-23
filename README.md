@@ -5,7 +5,7 @@
 ![Brain Tumor Detection](https://img.shields.io/badge/AI-Brain%20Tumor%20Detection-blue?style=for-the-badge&logo=brain&logoColor=white)
 ![React](https://img.shields.io/badge/React-18.0+-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
 
 ## 📋 Table of Contents
 
@@ -106,33 +106,16 @@ npm run dev
 ### Backend Setup
 
 ```bash
-# Navigate to backend directory
-cd ../backend
-
-# Create virtual environment
-python -m venv venv
-
-# Activate virtual environment
-# Windows:
-venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
 # Start Flask server
 python app.py
 ```
 
 ### 📄 Requirements.txt
 ```txt
-Flask==2.3.3
-Flask-CORS==4.0.0
-tensorflow==2.13.0
-Pillow==10.0.0
-numpy==1.24.3
-opencv-python==4.8.0.76
+PyTorch
+Uvicorn
+Flask
+torchvision
 ```
 
 ## 🎮 Usage
@@ -220,52 +203,13 @@ Analyzes an uploaded MRI image for brain tumor detection.
 ## 📸 Screenshots
 
 ### Main Interface
-![Main Interface](./screenshots/main-interface.png)
+![Main Interface](https://i.ibb.co/60sK0yKJ/Screenshot-2025-06-23-141724.png)
 
 ### Image Upload
-![Image Upload](./screenshots/upload-interface.png)
+![Image Upload](https://i.ibb.co/wr8N80hJ/Screenshot-2025-06-23-174349.png)
 
 ### Analysis Results
-![Results Display](./screenshots/results-display.png)
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### Development Workflow
-
-1. **Fork the Repository**
-   ```bash
-   git fork https://github.com/yourusername/brain-tumor-detection.git
-   ```
-
-2. **Create Feature Branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-
-3. **Make Changes**
-   - Write clean, documented code
-   - Follow existing code style
-   - Add tests for new features
-
-4. **Commit Changes**
-   ```bash
-   git commit -m "Add amazing feature"
-   ```
-
-5. **Push and Create PR**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-
-### Contribution Areas
-- 🐛 Bug fixes and improvements
-- ✨ New features and enhancements
-- 📚 Documentation improvements
-- 🧪 Test coverage expansion
-- 🎨 UI/UX improvements
-- 🤖 Model optimization
+![Results Display](https://i.ibb.co/DcWZbfK/Screenshot-2025-06-23-174356.png)
 
 ## 📄 License
 
